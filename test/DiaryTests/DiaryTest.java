@@ -2,6 +2,7 @@ package DiaryTests;
 
 import Diary.Diary;
 import Diary.Entry;
+import Diary.Exceptions.EntryNotFoundException;
 import Diary.Exceptions.IncorrectPasswordException;
 import Diary.Exceptions.LockedDiaryException;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +21,6 @@ public class DiaryTest {
 
     @Test
     public void testDiaryCanBeUnlockedWithPassword(){
-
         diary.unlockDiary("password");
         assertFalse(diary.isLocked());
     }
@@ -51,6 +51,15 @@ public class DiaryTest {
         System.out.println(diary.getNumberOfEntries());
         diary.deleteEntry(0);
         assertEquals(0,diary.getNumberOfEntries());
+
+    }
+
+    @Test
+    public void deleteEntryThatDoesNotExist_ThrowException(){
+        diary.unlockDiary("password");
+        diary.createEntry("Name of the day","I had fun today!");
+
+        assertThrows(EntryNotFoundException.class,()->diary.deleteEntry(1));
 
     }
 
