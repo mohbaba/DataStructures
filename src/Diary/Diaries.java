@@ -2,6 +2,7 @@ package Diary;
 
 
 import Diary.Exceptions.DiaryNotFoundException;
+import Diary.Exceptions.IncorrectPasswordException;
 
 import java.util.ArrayList;
 
@@ -31,7 +32,12 @@ public class Diaries {
     public void delete(String username, String password) {
         Diary diary = findByUsername(username);
         checkDiary(diary);
-        diaries.remove(diary);
+
+        if (diary.validate(password)) {
+            if (diary.validateUsername(username)) diaries.remove(diary);
+            else throw new DiaryNotFoundException("Username does not exist");
+        }
+        else throw new IncorrectPasswordException("Incorrect Password");
     }
 
     private void checkDiary(Diary diary) {

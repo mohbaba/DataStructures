@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Diary and Account Classes Added">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Diary/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Diary/Diaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Diary/Diaries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Diary/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Diary/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/DiaryTests/DiariesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DiaryTests/DiariesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/DiaryTests/DiaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DiaryTests/DiaryTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\DELL\IdeaProjects\ArrayList\htmlReport" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2c3OOFkzJ1JtWQ7zhl6UUtKWYv3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "C:/Users/DELL/IdeaProjects/ArrayList/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/DELL/IdeaProjects/ArrayList/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "coverage",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Diary.Exceptions" />
+      <recent name="Diary" />
+      <recent name="FireDrill" />
+      <recent name="Account.Exceptions" />
+      <recent name="Account" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainApp">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Diary.MainApp" />
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Diary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiariesTest.deleteDiary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DiaryTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DiaryTests" />
+      <option name="MAIN_CLASS_NAME" value="DiaryTests.DiariesTest" />
+      <option name="METHOD_NAME" value="deleteDiary" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiariesTest.deleteDiaryWithIncorrectPassword_ThrowsExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DiaryTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DiaryTests" />
+      <option name="MAIN_CLASS_NAME" value="DiaryTests.DiariesTest" />
+      <option name="METHOD_NAME" value="deleteDiaryWithIncorrectPassword_ThrowsExceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiariesTest.deleteDiaryWithIncorrectUsername_ThrowsExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DiaryTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DiaryTests" />
+      <option name="MAIN_CLASS_NAME" value="DiaryTests.DiariesTest" />
+      <option name="METHOD_NAME" value="deleteDiaryWithIncorrectUsername_ThrowsExceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Diary Tests" type="JUnit" factoryName="JUnit">
+      <module name="ArrayList" />
+      <extension name="coverage" track_test_folders="true" />
+      <option name="PACKAGE_NAME" value="DiaryTests" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryTest.deleteEntryThatDoesNotExist_ThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DiaryTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DiaryTests" />
+      <option name="MAIN_CLASS_NAME" value="DiaryTests.DiaryTest" />
+      <option name="METHOD_NAME" value="deleteEntryThatDoesNotExist_ThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainApp" />
+      <item itemvalue="JUnit.Diary Tests" />
+      <item itemvalue="JUnit.DiariesTest.deleteDiary" />
+      <item itemvalue="JUnit.DiariesTest.deleteDiaryWithIncorrectPassword_ThrowsExceptionTest" />
+      <item itemvalue="JUnit.DiariesTest.deleteDiaryWithIncorrectUsername_ThrowsExceptionTest" />
+      <item itemvalue="JUnit.DiaryTest.deleteEntryThatDoesNotExist_ThrowException" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApp" />
+        <item itemvalue="JUnit.DiaryTest.deleteEntryThatDoesNotExist_ThrowException" />
+        <item itemvalue="JUnit.DiariesTest.deleteDiaryWithIncorrectUsername_ThrowsExceptionTest" />
+        <item itemvalue="JUnit.DiariesTest.deleteDiaryWithIncorrectPassword_ThrowsExceptionTest" />
+        <item itemvalue="JUnit.DiariesTest.deleteDiary" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="" />
+      <created>1707336772694</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707336772694</updated>
+      <workItem from="1707336773599" duration="17042000" />
+      <workItem from="1707426209425" duration="7938000" />
+      <workItem from="1707557875100" duration="85976000" />
+      <workItem from="1708049330264" duration="4589000" />
+      <workItem from="1708160907626" duration="6431000" />
+      <workItem from="1708274971806" duration="23844000" />
+      <workItem from="1708448394548" duration="36196000" />
+      <workItem from="1708658100924" duration="1279000" />
+      <workItem from="1708662649371" duration="13710000" />
+      <workItem from="1708771689418" duration="49154000" />
+    </task>
+    <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
+      <option name="closed" value="true" />
+      <created>1707718041243</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707718041243</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Estore code added">
+      <option name="closed" value="true" />
+      <created>1708187955670</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708187955670</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Diary and Account Classes Added">
+      <option name="closed" value="true" />
+      <created>1708849019844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708849019844</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Diary and Account Classes Added">
+      <option name="closed" value="true" />
+      <created>1708886851421</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708886851422</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Data Structures ArrayList and Stack added" />
+    <MESSAGE value="Estore code added" />
+    <MESSAGE value="Diary and Account Classes Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Diary and Account Classes Added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ArrayList$JUnit_Tests.ic" NAME="JUnit Tests Coverage Results" MODIFIED="1708801538424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ArrayList$Diary_Tests.ic" NAME="Diary Tests Coverage Results" MODIFIED="1708802084676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ArrayList$DiariesTest.ic" NAME="DiariesTest Coverage Results" MODIFIED="1708845101463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DiaryTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ArrayList$BankTest.ic" NAME="BankTest Coverage Results" MODIFIED="1708576909664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>AccountTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ArrayList$DiaryTest.ic" NAME="DiaryTest Coverage Results" MODIFIED="1708845154719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DiaryTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ArrayList$AccountTest.ic" NAME="AccountTest Coverage Results" MODIFIED="1708578617370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>AccountTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ArrayList$DiaryTest_updateEntryInDiaryWhenLocked_ThrowExceptionTest.ic" NAME="DiaryTest.updateEntryInDiaryWhenLocked_ThrowExceptionTest Coverage Results" MODIFIED="1708801639065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DiaryTests.*</FILTER>
+    </SUITE>
+  </component>
+</project>

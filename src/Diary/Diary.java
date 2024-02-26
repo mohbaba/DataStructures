@@ -75,6 +75,10 @@ public class Diary {
         return null;
     }
 
+    public boolean validate(String password){
+        return this.password.equals(password);
+    }
+
     public void updateEntry(int entryId,String title, String body) {
         checkLock();
         Entry entry = findEntryById(entryId);
@@ -86,5 +90,9 @@ public class Diary {
 
     public String getUsername() {
         return username;
+    }
+
+    public boolean validateUsername(String username) {
+        return this.username.equals(username);
     }
 }

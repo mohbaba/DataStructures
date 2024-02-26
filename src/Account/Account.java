@@ -33,8 +33,6 @@ public class Account {
     }
 
 
-
-
     public void deposit(int amount){
         if (amount < 0)throw new InvalidAmountException("Cannot deposit negative amount");
         balance += amount;
@@ -44,6 +42,10 @@ public class Account {
         if (!this.pin.equals(pin))throw new InvalidPinException("Invalid Pin Try " +
                 "Again");
 
+    }
+
+    public boolean verifyPin(String pin){
+        return this.pin.equals(pin);
     }
     public void withdraw(int amount,String pin){
         validatePin(pin);

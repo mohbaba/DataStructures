@@ -1,6 +1,7 @@
 package Account;
 
 import Account.Exceptions.AccountNotFound;
+import Account.Exceptions.InvalidPinException;
 
 import java.util.ArrayList;
 
@@ -62,11 +63,20 @@ public class Bank {
         return balance;
     }
 
+    private boolean validatePin(String pin , Account account){
+        return account.verifyPin(pin);
+    }
+
     public void removeAccount(int accountNumber, String pin) {
         Account account = findAccount(accountNumber);
         validateAccount(account);
-        accounts.remove(account);
-        noOfCustomers--;
+        if (validatePin(pin,account)){
+            accounts.remove(account);
+            noOfCustomers--;
+        }else{
+            throw new InvalidPinException("Pin is Incorrect");
+        }
+
 
     }
 
