@@ -1,11 +1,10 @@
 package Queue;
 
 
+import java.util.NoSuchElementException;
 
 public class MyQueue {
     private int numberOfElements;
-    private boolean isDynamic;
-    private int length;
     private int[] intArray = new int[3];
 
 
@@ -33,5 +32,16 @@ public class MyQueue {
             newArray[index] = array[index];
         }
         intArray = newArray;
+    }
+
+    public int getSize() {
+        return numberOfElements;
+    }
+
+    public void remove() {
+        if (isEmpty())throw new NoSuchElementException();
+        intArray[numberOfElements] = 0;
+        numberOfElements--;
+
     }
 }
