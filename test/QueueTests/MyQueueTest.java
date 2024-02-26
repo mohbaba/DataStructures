@@ -1,9 +1,7 @@
 package QueueTests;
 
-import ArrayList.MyArrayList;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import Queue.MyQueue;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -28,7 +26,7 @@ public class MyQueueTest {
         MyQueue queue = new MyQueue();
         assertTrue(queue.isEmpty());
 
-        queue.add("mohbaba");
+        queue.add(5);
         assertFalse(queue.isEmpty());
     }
 }
