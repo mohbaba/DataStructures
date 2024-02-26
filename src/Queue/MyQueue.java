@@ -40,7 +40,7 @@ public class MyQueue {
 
     public void remove() {
         if (isEmpty())throw new NoSuchElementException();
-        intArray[numberOfElements] = 0;
+        intArray[0] = 0;
         numberOfElements--;
 
     }
