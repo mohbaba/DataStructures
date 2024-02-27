@@ -44,4 +44,9 @@ public class MyQueue {
         numberOfElements--;
 
     }
+
+    public int peek() {
+//        if (isEmpty())return null;
+        return intArray[0];
+    }
 }

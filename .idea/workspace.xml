@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Queue Test Added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="queue remove method Added">
       <change beforePath="$PROJECT_DIR$/src/Queue/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue/MyQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/QueueTests/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/QueueTests/MyQueueTest.java" afterDir="false" />
     </list>
@@ -72,7 +71,7 @@
       <recent name="Account" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyQueueTest.removeElementFromEmptyList_ThrowsExceptionTest">
+  <component name="RunManager" selected="JUnit.MyQueueTest.peekTheHeadOfQueue_ReturnsTheNullIFQueueIfEmpty">
     <configuration name="Diary Tests" type="JUnit" factoryName="JUnit">
       <module name="ArrayList" />
       <extension name="coverage" track_test_folders="true" />
@@ -84,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyQueueTest.peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
         <pattern>
@@ -94,7 +93,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="QueueTests" />
       <option name="MAIN_CLASS_NAME" value="QueueTests.MyQueueTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest.peekTheHeadOfQueue_ReturnsTheNullIFQueueIfEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="QueueTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="QueueTests" />
+      <option name="MAIN_CLASS_NAME" value="QueueTests.MyQueueTest" />
+      <option name="METHOD_NAME" value="peekTheHeadOfQueue_ReturnsTheNullIFQueueIfEmpty" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,22 +147,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyQueueTest.testThatQueueIsNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="QueueTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="QueueTests" />
-      <option name="MAIN_CLASS_NAME" value="QueueTests.MyQueueTest" />
-      <option name="METHOD_NAME" value="testThatQueueIsNotEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyQueueTest.testThatTwoItemsCanBeAddedToListAndOneCanBeRemoved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
@@ -165,19 +165,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Diary Tests" />
-      <item itemvalue="JUnit.MyQueueTest" />
+      <item itemvalue="JUnit.MyQueueTest.peekTheHeadOfQueue_ReturnsTheNullIFQueueIfEmpty" />
+      <item itemvalue="JUnit.MyQueueTest.peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty" />
       <item itemvalue="JUnit.MyQueueTest.removeElementFromEmptyList_ThrowsExceptionTest" />
       <item itemvalue="JUnit.MyQueueTest.testThatOneItemCanBeAddedToQueue" />
-      <item itemvalue="JUnit.MyQueueTest.testThatQueueIsNotEmpty" />
       <item itemvalue="JUnit.MyQueueTest.testThatTwoItemsCanBeAddedToListAndOneCanBeRemoved" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyQueueTest.peekTheHeadOfQueue_ReturnsTheNullIFQueueIfEmpty" />
+        <item itemvalue="JUnit.MyQueueTest.peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty" />
         <item itemvalue="JUnit.MyQueueTest.removeElementFromEmptyList_ThrowsExceptionTest" />
         <item itemvalue="JUnit.MyQueueTest.testThatTwoItemsCanBeAddedToListAndOneCanBeRemoved" />
         <item itemvalue="JUnit.MyQueueTest.testThatOneItemCanBeAddedToQueue" />
-        <item itemvalue="JUnit.MyQueueTest" />
-        <item itemvalue="JUnit.MyQueueTest.testThatQueueIsNotEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +199,7 @@
       <workItem from="1708658100924" duration="1279000" />
       <workItem from="1708662649371" duration="13710000" />
       <workItem from="1708771689418" duration="49154000" />
-      <workItem from="1708889840215" duration="16942000" />
+      <workItem from="1708889840215" duration="18447000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -257,7 +257,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708939230900</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Queue Test Added">
+      <option name="closed" value="true" />
+      <created>1708940889899</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708940889899</updated>
+    </task>
+    <task id="LOCAL-00009" summary="queue remove method Added">
+      <option name="closed" value="true" />
+      <created>1708941035926</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708941035926</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +285,8 @@
     <MESSAGE value="Diary and Account Classes Added" />
     <MESSAGE value="Queue Added" />
     <MESSAGE value="Queue Test Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Queue Test Added" />
+    <MESSAGE value="queue remove method Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="queue remove method Added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

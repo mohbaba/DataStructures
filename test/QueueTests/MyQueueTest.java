@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -60,9 +61,25 @@ public class MyQueueTest {
     }
 
     @Test
-    public void removeElementFromEmptyList_ThrowsExceptionTest(){
+    public void removeElementFromEmptyQueue_ThrowsExceptionTest(){
         assertThrows(NoSuchElementException.class,()->queue.remove());
     }
 
+    @Test
+    public void peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty(){
+        assertTrue(queue.isEmpty());
 
+        queue.add(1);
+        queue.add(2);
+        assertEquals(2,queue.getSize());
+
+        assertEquals(1,queue.peek());
+    }
+
+    @Test
+    public void peekTheHeadOfQueue_ReturnsTheNullIFQueueIfEmpty(){
+        assertTrue(queue.isEmpty());
+        assertEquals(Optional.ofNullable(null),queue.peek());
+
+    }
 }
