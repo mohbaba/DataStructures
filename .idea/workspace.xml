@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Created Board" />
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Refactored Player CLass">
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/Exceptions/InvalidMoveException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TicTacToeTests/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TicTacToeTests/TicTacToeTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,22 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SevenSegmentDisplayTest.testSevenSegmentIsOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SevenSegmentDisplayTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SevenSegmentDisplayTests" />
-      <option name="MAIN_CLASS_NAME" value="SevenSegmentDisplayTests.SevenSegmentDisplayTest" />
-      <option name="METHOD_NAME" value="testSevenSegmentIsOn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TicTacToeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
@@ -143,6 +133,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicTacToeTest.testThatPlayerOneCanPlayXOnTheBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TicTacToeTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TicTacToeTests" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
+      <option name="METHOD_NAME" value="testThatPlayerOneCanPlayXOnTheBoard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
@@ -162,18 +168,18 @@
     <list>
       <item itemvalue="JUnit.Diary Tests" />
       <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOff" />
-      <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOn" />
       <item itemvalue="JUnit.TicTacToeTest" />
       <item itemvalue="JUnit.TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted" />
+      <item itemvalue="JUnit.TicTacToeTest.testThatPlayerOneCanPlayXOnTheBoard" />
       <item itemvalue="JUnit.TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TicTacToeTest" />
-        <item itemvalue="JUnit.TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
         <item itemvalue="JUnit.TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted" />
+        <item itemvalue="JUnit.TicTacToeTest.testThatPlayerOneCanPlayXOnTheBoard" />
+        <item itemvalue="JUnit.TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
         <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOff" />
-        <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOn" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +203,7 @@
       <workItem from="1708771689418" duration="49154000" />
       <workItem from="1708889840215" duration="18447000" />
       <workItem from="1709010901971" duration="10546000" />
-      <workItem from="1709230384005" duration="14715000" />
+      <workItem from="1709230384005" duration="23301000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -295,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709390527999</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactored Player CLass">
+      <option name="closed" value="true" />
+      <created>1709391279531</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709391279531</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +324,8 @@
     <MESSAGE value="queue remove method Added" />
     <MESSAGE value="Seven segment display" />
     <MESSAGE value="Created Board" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Board" />
+    <MESSAGE value="Refactored Player CLass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Player CLass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

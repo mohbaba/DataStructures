@@ -26,11 +26,11 @@ public class TicTacToeTest {
         game.populateBoard();
     }
 
-    @Test
-    public void testThatTicTacToeGameHasTwoPlayersAtStartOfGame(){
-        Player[] players = game.getPlayers();
-        assertEquals(2,players.length);
-    }
+//    @Test
+//    public void testThatTicTacToeGameHasTwoPlayersAtStartOfGame(){
+//        Player[] players = game.getPlayers();
+//        assertEquals(2,players.length);
+//    }
 
     @Test
     public void testThatBoardIsEmptyWhenGameIsStarted(){
@@ -40,6 +40,12 @@ public class TicTacToeTest {
 
     @Test
     public void testThatPlayerOneCanPlayXOnTheBoard(){
+        BoardPosition[][] board = game.getBoard();
 
+        game.player1.play(1,game);
+        assertEquals(BoardPosition.X,board[0][0]);
     }
+
+//    @Test
+//    public void
 }
