@@ -4,17 +4,19 @@ import java.util.Arrays;
 
 public class TicTacToe {
     private final Player[] players;
-    BoardPosition[][] board = new BoardPosition[3][3];
+    BoardPosition[][] board;
 
     public TicTacToe(){
 
-        Player player1 = new Player(1);
-        Player player2 = new Player(2);
+        Player player1 = new Player();
+        Player player2 = new Player();
 
         players = new Player[2];
+        board = new BoardPosition[3][3];
+
+        populateBoard();
         players[0] = player1;
         players[1] = player2;
-        populateBoard();
 
     }
 

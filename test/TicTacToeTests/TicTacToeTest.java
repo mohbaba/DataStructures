@@ -3,6 +3,7 @@ package TicTacToeTests;
 import TicTacToe.Player;
 import TicTacToe.BoardPosition;
 import TicTacToe.TicTacToe;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -20,6 +21,11 @@ public class TicTacToeTest {
          game = new TicTacToe();
     }
 
+    @AfterEach
+    public void tearDown(){
+        game.populateBoard();
+    }
+
     @Test
     public void testThatTicTacToeGameHasTwoPlayersAtStartOfGame(){
         Player[] players = game.getPlayers();
@@ -30,5 +36,10 @@ public class TicTacToeTest {
     public void testThatBoardIsEmptyWhenGameIsStarted(){
         BoardPosition[][] board = game.getBoard();
         assertArrayEquals(testBoard,board);
+    }
+
+    @Test
+    public void testThatPlayerOneCanPlayXOnTheBoard(){
+
     }
 }

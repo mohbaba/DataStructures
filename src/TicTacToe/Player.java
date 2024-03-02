@@ -1,9 +1,9 @@
 package TicTacToe;
 
 public class Player {
-    private final int id ;
-    public Player(int id) {
-        this.id = id;
+    private static int id ;
+    public Player() {
+        ++id;
     }
 
     public int getId() {
