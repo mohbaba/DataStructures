@@ -11,7 +11,7 @@ public class Account {
     private final String name;
     private int balance;
     private final String pin;
-    protected int number;
+    private int number;
 
 
     public Account(String name, String pin, int accountNumber){

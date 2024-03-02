@@ -45,8 +45,16 @@ public class MyQueue {
 
     }
 
-    public int peek() {
-//        if (isEmpty())return null;
+    public Integer peek() {
+        if (isEmpty())return null;
         return intArray[0];
     }
+
+    public int element() {
+        if (isEmpty())throw new NoSuchElementException();
+        return intArray[0];
+    }
+
+
+
 }

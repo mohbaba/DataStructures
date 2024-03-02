@@ -35,7 +35,6 @@ public class BankTest {
     public void depositNegativeAmount_ThrowExceptionTest(){
         Bank bank = new Bank("MohBank");
         Account account1 = bank.registerCustomer("Moh","baba","1234");
-        System.out.println(account1.getAccountNumber());
 
         assertThrows(InvalidAmountException.class,()->bank.deposit(-5000,
                 1));
@@ -71,7 +70,7 @@ public class BankTest {
     }
 
     @Test
-    public void transferNegativeMoneyFromAccountToAccount() throws InvalidPinException, InsufficientFundsException, InvalidAmountException {
+    public void transferNegativeMoneyFromAccountToAccount(){
         Bank bank = new Bank("MohBank");
         Account account1 = bank.registerCustomer("Moh","baba","1234");
         Account account2 = bank.registerCustomer("Bolaji","Dayo","1234");
@@ -81,7 +80,7 @@ public class BankTest {
     }
 
     @Test
-    public void removeAccountFromListOfAccountsTest() throws InvalidPinException {
+    public void removeAccountFromListOfAccountsTest(){
         Bank bank = new Bank("MohBank");
         Account account1 = bank.registerCustomer("Moh","baba","1234");
         bank.removeAccount(1,"1234");

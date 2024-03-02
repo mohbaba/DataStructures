@@ -2,6 +2,7 @@ package QueueTests;
 
 import ArrayList.MyArrayList;
 import Queue.MyQueue;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -17,6 +18,11 @@ public class MyQueueTest {
     public void testThatQueueIsEmptyWhenCreated(){
         queue = new MyQueue();
         assertTrue(queue.isEmpty());
+
+    }
+
+    @AfterEach
+    public void tearDown(){
 
     }
 
@@ -74,12 +80,14 @@ public class MyQueueTest {
         assertEquals(2,queue.getSize());
 
         assertEquals(1,queue.peek());
+//        assertEquals(2,queue.peek()+queue.peek());
+
     }
 
     @Test
     public void peekTheHeadOfQueue_ReturnsTheNullIFQueueIfEmpty(){
         assertTrue(queue.isEmpty());
-        assertEquals(Optional.ofNullable(null),queue.peek());
+        assertNull(queue.peek());
 
     }
 }
