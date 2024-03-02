@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="queue remove method Added">
-      <change afterPath="$PROJECT_DIR$/src/SevenSegmentDisplay/SevenSegmentDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/SevenSegmentDisplayTests/SevenSegmentDisplayTest.java" afterDir="false" />
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Seven segment display">
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/BoardPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/TicTacToeTests/TicTacToeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Queue/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/AccountTests/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AccountTests/BankTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/QueueTests/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/QueueTests/MyQueueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -76,7 +74,7 @@
       <recent name="Account" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOff">
+  <component name="RunManager" selected="JUnit.TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted">
     <configuration name="Diary Tests" type="JUnit" factoryName="JUnit">
       <module name="ArrayList" />
       <extension name="coverage" track_test_folders="true" />
@@ -84,22 +82,6 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyQueueTest.peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="QueueTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="QueueTests" />
-      <option name="MAIN_CLASS_NAME" value="QueueTests.MyQueueTest" />
-      <option name="METHOD_NAME" value="peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,17 +134,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SevenSegmentDisplayTest.testTheLengthOfInputMustBeEightCharacters__ThrowsExceptionIfNot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SevenSegmentDisplayTests.*" />
+          <option name="PATTERN" value="TicTacToeTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SevenSegmentDisplayTests" />
-      <option name="MAIN_CLASS_NAME" value="SevenSegmentDisplayTests.SevenSegmentDisplayTest" />
-      <option name="METHOD_NAME" value="testTheLengthOfInputMustBeEightCharacters__ThrowsExceptionIfNot" />
+      <option name="PACKAGE_NAME" value="TicTacToeTests" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
+      <option name="METHOD_NAME" value="testThatBoardIsEmptyWhenGameIsStarted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TicTacToeTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TicTacToeTests" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
+      <option name="METHOD_NAME" value="testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,16 +171,16 @@
       <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOff" />
       <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOn" />
       <item itemvalue="JUnit.SevenSegmentDisplayTest.testTheInputCanOnlyBeZerosAndOnes" />
-      <item itemvalue="JUnit.SevenSegmentDisplayTest.testTheLengthOfInputMustBeEightCharacters__ThrowsExceptionIfNot" />
-      <item itemvalue="JUnit.MyQueueTest.peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty" />
+      <item itemvalue="JUnit.TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted" />
+      <item itemvalue="JUnit.TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted" />
+        <item itemvalue="JUnit.TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
         <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOff" />
         <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOn" />
         <item itemvalue="JUnit.SevenSegmentDisplayTest.testTheInputCanOnlyBeZerosAndOnes" />
-        <item itemvalue="JUnit.SevenSegmentDisplayTest.testTheLengthOfInputMustBeEightCharacters__ThrowsExceptionIfNot" />
-        <item itemvalue="JUnit.MyQueueTest.peekTheHeadOfQueue_ReturnsTheElementIFQueueIfNotEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +204,7 @@
       <workItem from="1708771689418" duration="49154000" />
       <workItem from="1708889840215" duration="18447000" />
       <workItem from="1709010901971" duration="10546000" />
-      <workItem from="1709230384005" duration="10851000" />
+      <workItem from="1709230384005" duration="14316000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -288,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709010956108</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Seven segment display">
+      <option name="closed" value="true" />
+      <created>1709386776318</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709386776318</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +307,8 @@
     <MESSAGE value="Queue Added" />
     <MESSAGE value="Queue Test Added" />
     <MESSAGE value="queue remove method Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="queue remove method Added" />
+    <MESSAGE value="Seven segment display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seven segment display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
