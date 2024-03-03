@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Refactored Player CLass">
-      <change afterPath="$PROJECT_DIR$/src/TicTacToe/Exceptions/InvalidMoveException.java" afterDir="false" />
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Refactored Player Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" afterDir="false" />
@@ -29,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,7 +63,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;coverage&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -86,22 +88,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SevenSegmentDisplayTest.testSevenSegmentIsOff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SevenSegmentDisplayTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SevenSegmentDisplayTests" />
-      <option name="MAIN_CLASS_NAME" value="SevenSegmentDisplayTests.SevenSegmentDisplayTest" />
-      <option name="METHOD_NAME" value="testSevenSegmentIsOff" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TicTacToeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
@@ -117,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTacToeTest.testDrawAfterAllTheSpacesAreFilled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
         <pattern>
@@ -127,13 +113,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="TicTacToeTests" />
       <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
-      <option name="METHOD_NAME" value="testThatBoardIsEmptyWhenGameIsStarted" />
+      <option name="METHOD_NAME" value="testDrawAfterAllTheSpacesAreFilled" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeTest.testThatPlayerOneCanPlayXOnTheBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTacToeTest.testThatIfThereIsWinnerAndBoardISFilled_DrawShouldBeFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
         <pattern>
@@ -143,13 +129,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="TicTacToeTests" />
       <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
-      <option name="METHOD_NAME" value="testThatPlayerOneCanPlayXOnTheBoard" />
+      <option name="METHOD_NAME" value="testThatIfThereIsWinnerAndBoardISFilled_DrawShouldBeFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTacToeTest.testThatPlayerTwoCannotPlayFirst__ThrowsExceptionIfTried" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
         <pattern>
@@ -159,7 +145,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="TicTacToeTests" />
       <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
-      <option name="METHOD_NAME" value="testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
+      <option name="METHOD_NAME" value="testThatPlayerTwoCannotPlayFirst__ThrowsExceptionIfTried" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToeTest.testThatPlayerWinsGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TicTacToeTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TicTacToeTests" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
+      <option name="METHOD_NAME" value="testThatPlayerWinsGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,19 +169,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Diary Tests" />
-      <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOff" />
+      <item itemvalue="JUnit.TicTacToeTest.testDrawAfterAllTheSpacesAreFilled" />
+      <item itemvalue="JUnit.TicTacToeTest.testThatIfThereIsWinnerAndBoardISFilled_DrawShouldBeFalse" />
       <item itemvalue="JUnit.TicTacToeTest" />
-      <item itemvalue="JUnit.TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted" />
-      <item itemvalue="JUnit.TicTacToeTest.testThatPlayerOneCanPlayXOnTheBoard" />
-      <item itemvalue="JUnit.TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
+      <item itemvalue="JUnit.TicTacToeTest.testThatPlayerTwoCannotPlayFirst__ThrowsExceptionIfTried" />
+      <item itemvalue="JUnit.TicTacToeTest.testThatPlayerWinsGame" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TicTacToeTest" />
-        <item itemvalue="JUnit.TicTacToeTest.testThatBoardIsEmptyWhenGameIsStarted" />
-        <item itemvalue="JUnit.TicTacToeTest.testThatPlayerOneCanPlayXOnTheBoard" />
-        <item itemvalue="JUnit.TicTacToeTest.testThatTicTacToeGameHasTwoPlayersAtStartOfGame" />
-        <item itemvalue="JUnit.SevenSegmentDisplayTest.testSevenSegmentIsOff" />
+        <item itemvalue="JUnit.TicTacToeTest.testThatIfThereIsWinnerAndBoardISFilled_DrawShouldBeFalse" />
+        <item itemvalue="JUnit.TicTacToeTest.testDrawAfterAllTheSpacesAreFilled" />
+        <item itemvalue="JUnit.TicTacToeTest.testThatPlayerWinsGame" />
+        <item itemvalue="JUnit.TicTacToeTest.testThatPlayerTwoCannotPlayFirst__ThrowsExceptionIfTried" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +205,9 @@
       <workItem from="1708771689418" duration="49154000" />
       <workItem from="1708889840215" duration="18447000" />
       <workItem from="1709010901971" duration="10546000" />
-      <workItem from="1709230384005" duration="23301000" />
+      <workItem from="1709230384005" duration="33004000" />
+      <workItem from="1709483872419" duration="2931000" />
+      <workItem from="1709495051080" duration="1663000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -309,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709391279531</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refactored Player Class">
+      <option name="closed" value="true" />
+      <created>1709404383222</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709404383222</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +337,8 @@
     <MESSAGE value="Seven segment display" />
     <MESSAGE value="Created Board" />
     <MESSAGE value="Refactored Player CLass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored Player CLass" />
+    <MESSAGE value="Refactored Player Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Player Class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
