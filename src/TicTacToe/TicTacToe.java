@@ -67,75 +67,6 @@ public class TicTacToe {
         else throw new InvalidMoveException("Space is already filled");
     }
 
-    public boolean checkWinner(){
-        if ((board[0][0] == BoardPosition.X && board[0][1] == BoardPosition.X && board[0][2] == BoardPosition.X)){
-            this.winner = player1;
-            return true;
-        }
-        if (board[0][0] == BoardPosition.O && board[0][1] == BoardPosition.O && board[0][2] == BoardPosition.O){
-            this.winner = player2;
-            return true;
-        }
-        if ((board[1][0] == BoardPosition.X && board[1][1] == BoardPosition.X && board[1][2] == BoardPosition.X)){
-            this.winner = player1;
-            return true;
-        }
-        if (board[1][0] == BoardPosition.O && board[1][1] == BoardPosition.O && board[1][2] == BoardPosition.O){
-            this.winner = player2;
-            return true;
-        }
-        if ((board[2][0] == BoardPosition.X && board[2][1] == BoardPosition.X && board[2][2] == BoardPosition.X)){
-            this.winner = player1;
-            return true;
-        }
-        if ((board[2][0] == BoardPosition.O && board[2][1] == BoardPosition.O && board[2][2] == BoardPosition.O)){
-            this.winner = player2;
-            return true;
-        }
-        if ((board[0][0] == BoardPosition.X && board[1][1] == BoardPosition.X && board[2][2] == BoardPosition.X)){
-            this.winner = player1;
-            return true;
-        }
-        if ((board[0][0] == BoardPosition.O && board[1][1] == BoardPosition.O && board[2][2] == BoardPosition.O)){
-            this.winner = player2;
-            return true;
-        }
-        if ((board[0][2] == BoardPosition.X && board[1][1] == BoardPosition.X && board[2][0] == BoardPosition.X)){
-            this.winner = player1;
-            return true;
-        }
-        if ((board[0][2] == BoardPosition.O && board[1][1] == BoardPosition.O && board[2][0] == BoardPosition.O)){
-            this.winner = player2;
-            return true;
-        }
-        if ((board[0][0] == BoardPosition.X && board[1][0] == BoardPosition.X && board[2][0] == BoardPosition.X)){
-            this.winner = player1;
-            return true;
-        }
-        if ((board[0][0] == BoardPosition.O && board[1][0] == BoardPosition.O && board[2][0] == BoardPosition.O)){
-            this.winner = player2;
-            return true;
-        }
-        if ((board[0][1] == BoardPosition.X && board[1][1] == BoardPosition.X && board[2][1] == BoardPosition.X)){
-            this.winner = player1;
-            return true;
-        }
-        if ((board[0][1] == BoardPosition.O && board[1][1] == BoardPosition.O && board[2][1] == BoardPosition.O)){
-            this.winner = player2;
-            return true;
-        }
-        if ((board[0][2] == BoardPosition.X && board[1][2] == BoardPosition.X && board[2][2] == BoardPosition.X)){
-            this.winner = player1;
-            return true;
-        }
-        if ((board[0][2] == BoardPosition.O && board[1][2] == BoardPosition.O && board[2][2] == BoardPosition.O)){
-            this.winner = player2;
-            return true;
-        }
-
-        return false;
-    }
-
     public Player getWinner() {
         return winner;
     }
@@ -174,34 +105,51 @@ public class TicTacToe {
         return true;
     }
 
-//    public boolean checkWinner() {
-//        for (int number = 0; number < 3; number++) {
-//            if (checkRow(number, BoardPosition.X) || checkRow(number, BoardPosition.O)) {
-//                return true;
-//            }
-//            if (checkColumn(number, BoardPosition.X) || checkColumn(number, BoardPosition.O)) {
-//                return true;
-//            }
-//        }
-//
-//        return checkDiagonal(BoardPosition.X) || checkDiagonal(BoardPosition.O);
-//    }
-//
-//    private boolean checkRow(int row, BoardPosition marker) {
-//        return (board[row][0] == marker && board[row][1] == marker && board[row][2] == marker);
-//    }
-//
-//    private boolean checkColumn(int column, BoardPosition marker) {
-//        return (board[0][column] == marker && board[1][column] == marker && board[2][column] == marker);
-//    }
-//
-//    private boolean checkDiagonal(BoardPosition marker) {
-//        boolean mainDiagonal = (board[0][0] == marker && board[1][1] == marker && board[2][2] == marker);
-//        boolean reverseDiagonal = (board[0][2] == marker && board[1][1] == marker && board[2][0] == marker);
-//
-//        if (mainDiagonal) return true;
-//        else return reverseDiagonal;
-//    }
+    public boolean checkWinner() {
+        for (int number = 0; number < 3; number++) {
+            if (checkRow(number, BoardPosition.X)) {
+                winner = player1;
+                return true;
+            }
+            if ( checkRow(number, BoardPosition.O)){
+                winner = player2;
+                return true;
+            }
+            if (checkColumn(number, BoardPosition.X)) {
+                winner = player1;
+                return true;
+            }
+            if (checkColumn(number, BoardPosition.O)){
+                winner = player2;
+                return true;
+            }
+        }
+        if (checkDiagonal(BoardPosition.X)){
+            winner = player1;
+            return true;
+        }
+        if (checkDiagonal(BoardPosition.O)){
+            winner = player2;
+            return true;
+        }
+        return false;
+    }
+
+    private boolean checkRow(int row, BoardPosition marker) {
+        return (board[row][0] == marker && board[row][1] == marker && board[row][2] == marker);
+    }
+
+    private boolean checkColumn(int column, BoardPosition marker) {
+        return (board[0][column] == marker && board[1][column] == marker && board[2][column] == marker);
+    }
+
+    private boolean checkDiagonal(BoardPosition marker) {
+        boolean mainDiagonal = (board[0][0] == marker && board[1][1] == marker && board[2][2] == marker);
+        boolean reverseDiagonal = (board[0][2] == marker && board[1][1] == marker && board[2][0] == marker);
+
+        if (mainDiagonal) return true;
+        else return reverseDiagonal;
+    }
 
 }
 
