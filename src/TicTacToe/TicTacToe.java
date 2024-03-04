@@ -8,9 +8,6 @@ public class TicTacToe {
     public Player player1;
     public Player player2;
     BoardPosition[][] board;
-
-
-
     private Player winner;
     private int playerHasPlayed = 2;
     private boolean draw;
