@@ -1,7 +1,6 @@
 package TicTacToeTests;
 
 import TicTacToe.Exceptions.InvalidMoveException;
-import TicTacToe.Player;
 import TicTacToe.BoardPosition;
 import TicTacToe.TicTacToe;
 import org.junit.jupiter.api.AfterEach;
@@ -18,7 +17,7 @@ public class TicTacToeTest {
 
     @BeforeEach
     public void setup(){
-         game = new TicTacToe();
+         game = new TicTacToe("Player One","Player Two");
     }
 
     @AfterEach

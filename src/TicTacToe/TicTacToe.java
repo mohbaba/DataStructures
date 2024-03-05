@@ -13,10 +13,10 @@ public class TicTacToe {
 
 
 
-    public TicTacToe(){
+    public TicTacToe(String name1, String name2){
 
-        player1 = new Player(1,true);
-        player2 = new Player(2,false);
+        player1 = new Player(1,true,name1);
+        player2 = new Player(2,false,name2);
 
         board = new BoardPosition[3][3];
         populateBoard();
