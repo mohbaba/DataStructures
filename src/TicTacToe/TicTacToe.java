@@ -7,10 +7,10 @@ import java.util.Arrays;
 public class TicTacToe {
     public Player player1;
     public Player player2;
-    BoardPosition[][] board;
+    private final BoardPosition[][] board;
     private Player winner;
     private int playerHasPlayed = 2;
-    private boolean draw;
+
 
 
     public TicTacToe(){
@@ -71,7 +71,6 @@ public class TicTacToe {
         if (isValidMove(position)){
             int row = (position - 1) / 3;
             int column = (position - 1) % 3;
-            if (isDraw())draw = isDraw();
             if (playerNumber == 1){
                 if (playerHasPlayed == 2 && !checkWinner()){
                    player1Play(row, column);
