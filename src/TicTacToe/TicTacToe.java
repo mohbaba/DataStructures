@@ -72,14 +72,15 @@ public class TicTacToe {
             int row = (position - 1) / 3;
             int column = (position - 1) % 3;
             if (playerNumber == 1){
-                if (playerHasPlayed == 2 && !checkWinner()){
-                   player1Play(row, column);
+                if (playerHasPlayed == 2){
+                    if (!checkWinner()) player1Play(row, column);
+
 
                 }else throw new InvalidMoveException("Not Your Turn");
 
             }else {
-                if (playerHasPlayed == 1 && !checkWinner()){
-                    player2Play(row,column);
+                if (playerHasPlayed == 1){
+                    if (!checkWinner()) player2Play(row,column);
                 }else throw new InvalidMoveException("Not Your Turn");
 
             }

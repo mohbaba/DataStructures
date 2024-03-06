@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Completed displayBoard functionality">
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Added MainApp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TicTacToeTests/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TicTacToeTests/TicTacToeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +205,7 @@
       <workItem from="1709230384005" duration="33004000" />
       <workItem from="1709483872419" duration="2931000" />
       <workItem from="1709495051080" duration="12208000" />
-      <workItem from="1709549720035" duration="7682000" />
+      <workItem from="1709549720035" duration="16699000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -361,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709612737542</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added MainApp">
+      <option name="closed" value="true" />
+      <created>1709624031775</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709624031776</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +388,9 @@
     <MESSAGE value="Refactored checkWinner()functionality" />
     <MESSAGE value="Added dislayboard functionality" />
     <MESSAGE value="Completed displayBoard functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed displayBoard functionality" />
+    <MESSAGE value="Added MainAppp" />
+    <MESSAGE value="Added MainApp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MainApp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

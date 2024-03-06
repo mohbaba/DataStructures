@@ -36,28 +36,66 @@ public class Main {
 
         frame.add(panel);
         frame.pack();
+        frame.revalidate();
         frame.setVisible(true);
 
     }
 
-    private static void setGame(TicTacToe game,String player1, String player2){
-        while (!game.checkWinner() || !game.isDraw()){
-            displayBoard(game);
-            int move1 = Integer.parseInt(input(player1+" Enter position between 1 and 9: "));
-            game.player1.play(move1,game);
-            displayBoard(game);
-            int move2 = Integer.parseInt(input(player2+" Enter position between 1 and 9: "));
-            game.player2.play(move2,game);
-            displayBoard(game);
+    private static void playGame(TicTacToe game, String player1, String player2){
+        boolean isPlayer1Turn = true;
+        boolean isPlayer2Turn = true;
+
+        while (!game.checkWinner() && !game.isDraw()){
+            playerOneMove(game,isPlayer1Turn,player1,isPlayer2Turn);
+            if (game.checkWinner()|| game.isDraw())break;
+            playerTwoMove(game,player2,isPlayer2Turn,isPlayer1Turn);
 
         }
         winCondition(game);
 
     }
 
+    private static void playerOneMove(TicTacToe game, boolean isPlayer1Turn, String player1,
+                                      boolean isPlayer2Turn){
+        while (isPlayer1Turn){
+            try{
+                int move1 = Integer.parseInt(input(player1+" Enter position between 1 and 9: "));
+                game.player1.play(move1,game);
+                displayBoard(game);
+                isPlayer2Turn = true;
+                isPlayer1Turn = false;
+
+            }catch (InvalidMoveException e){
+                print(e.getMessage());
+            }catch (Exception ignored){
+
+            }
+        }
+    }
+
+    private static void playerTwoMove(TicTacToe game, String player2,boolean isPlayer2Turn,
+                                      boolean isPlayer1Turn){
+        while (isPlayer2Turn){
+            try{
+                int move2 = Integer.parseInt(input(player2+" Enter position between 1 and 9: "));
+                game.player2.play(move2,game);
+                //if (game.checkWinner()|| game.isDraw())break;
+                displayBoard(game);
+                isPlayer1Turn = true;
+                isPlayer2Turn = false;
+
+
+            }catch (InvalidMoveException e){
+                print(e.getMessage());
+            }catch (Exception ignored){
+
+            }
+        }
+    }
     private static void winCondition(TicTacToe game){
         if (game.checkWinner()){
             print("Congratulations!!! "+game.getWinner().toString()+ " you win!!!!!1");
+            System.exit(0);
         } else if (game.isDraw()) {
             String continueGamePrompt =
                     input("The game is a draw, play again?(yes / no)").toLowerCase();
@@ -77,14 +115,15 @@ public class Main {
         TicTacToe game = new TicTacToe(player1,player2);
         print(player1.toUpperCase()+" plays first ");
         print("Enter 1-9 to select to play in on the board. Good Luck!!!");
+
         try{
-            setGame(game, player1, player2);
+            playGame(game, player1, player2);
         }catch (InvalidMoveException e){
             print(e.getMessage());
-            setGame(game, player1, player2);
-        }catch (Exception e){
-            print(e.getMessage());
-            mainApp();
+
+        }catch (Exception ignored){
         }
+
+
     }
 }
