@@ -21,6 +21,6 @@ public class BackToSender {
         if (numberOfParcels > 100)throw new IllegalArgumentException("Amount of Parcels " +
                 "Exceeds The required amount");
         if (numberOfParcels < 0)return 0;
-        return (numberOfParcels * getAmountPerParcel(numberOfParcels)) + 5000;
+        return (numberOfParcels * getAmountPerParcel(calculatePercentage(numberOfParcels))) + 5000;
     }
 }

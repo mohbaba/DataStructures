@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="back to sender">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="back to sender logistics refactored">
       <change beforePath="$PROJECT_DIR$/src/BackToSender/BackToSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackToSender/BackToSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/BackToSenderTest/BackToSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BackToSenderTest/BackToSenderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +206,7 @@
       <workItem from="1709230384005" duration="33004000" />
       <workItem from="1709483872419" duration="2931000" />
       <workItem from="1709495051080" duration="12208000" />
-      <workItem from="1709549720035" duration="30557000" />
+      <workItem from="1709549720035" duration="30942000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -394,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709786476030</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="back to sender logistics refactored">
+      <option name="closed" value="true" />
+      <created>1709795276431</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1709795276431</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +425,8 @@
     <MESSAGE value="Added MainApp" />
     <MESSAGE value="Fixed bugs" />
     <MESSAGE value="back to sender" />
-    <option name="LAST_COMMIT_MESSAGE" value="back to sender" />
+    <MESSAGE value="back to sender logistics refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="back to sender logistics refactored" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
