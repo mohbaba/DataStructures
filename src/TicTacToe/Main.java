@@ -46,23 +46,22 @@ public class Main {
         boolean isPlayer2Turn = true;
 
         while (!game.checkWinner() && !game.isDraw()){
-            playerOneMove(game,isPlayer1Turn,player1,isPlayer2Turn);
+            playerOneMove(game,isPlayer1Turn,player1);
             if (game.checkWinner()|| game.isDraw())break;
-            playerTwoMove(game,player2,isPlayer2Turn,isPlayer1Turn);
+            playerTwoMove(game,player2,isPlayer2Turn);
 
         }
-        winCondition(game);
+        displayCongratsMessage(game);
 
     }
 
-    private static void playerOneMove(TicTacToe game, boolean isPlayer1Turn, String player1,
-                                      boolean isPlayer2Turn){
+    private static void playerOneMove(TicTacToe game, boolean isPlayer1Turn, String player1){
         while (isPlayer1Turn){
             try{
+                displayBoard(game);
                 int move1 = Integer.parseInt(input(player1+" Enter position between 1 and 9: "));
                 game.player1.play(move1,game);
                 displayBoard(game);
-                isPlayer2Turn = true;
                 isPlayer1Turn = false;
 
             }catch (InvalidMoveException e){
@@ -73,17 +72,13 @@ public class Main {
         }
     }
 
-    private static void playerTwoMove(TicTacToe game, String player2,boolean isPlayer2Turn,
-                                      boolean isPlayer1Turn){
+    private static void playerTwoMove(TicTacToe game, String player2,boolean isPlayer2Turn){
         while (isPlayer2Turn){
             try{
                 int move2 = Integer.parseInt(input(player2+" Enter position between 1 and 9: "));
                 game.player2.play(move2,game);
-                //if (game.checkWinner()|| game.isDraw())break;
                 displayBoard(game);
-                isPlayer1Turn = true;
                 isPlayer2Turn = false;
-
 
             }catch (InvalidMoveException e){
                 print(e.getMessage());
@@ -92,20 +87,23 @@ public class Main {
             }
         }
     }
-    private static void winCondition(TicTacToe game){
+
+    private static void displayDrawMessage(){
+        String continueGamePrompt = input("The game is a draw, play again?(yes / no)").toLowerCase();
+        if (continueGamePrompt.equals("yes"))mainApp();
+        else if (continueGamePrompt.equals("no")) {
+            print("See you later!");
+            System.exit(0);
+        }else {
+            print("You no dey hear word, bye-bye sha");
+        }
+    }
+    private static void displayCongratsMessage(TicTacToe game){
         if (game.checkWinner()){
             print("Congratulations!!! "+game.getWinner().toString()+ " you win!!!!!1");
             System.exit(0);
         } else if (game.isDraw()) {
-            String continueGamePrompt =
-                    input("The game is a draw, play again?(yes / no)").toLowerCase();
-            if (continueGamePrompt.equals("yes"))mainApp();
-            else if (continueGamePrompt.equals("no")) {
-                print("See you later!");
-                System.exit(0);
-            }else {
-                print("You no dey hear word, bye-bye sha");
-            }
+            displayDrawMessage();
         }
     }
 

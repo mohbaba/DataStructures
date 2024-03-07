@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Fixed bugs" />
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Fixed bugs">
+      <change afterPath="$PROJECT_DIR$/src/BackToSender/BackToSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/BackToSenderTest/BackToSenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +77,7 @@
       <recent name="Account" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BackToSenderTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TicTacToe.Main" />
       <module name="ArrayList" />
@@ -82,6 +87,53 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackToSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BackToSenderTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BackToSenderTest" />
+      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BackToSenderTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BackToSenderTest" />
+      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
+      <option name="METHOD_NAME" value="testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackToSenderTest.testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BackToSenderTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BackToSenderTest" />
+      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
+      <option name="METHOD_NAME" value="testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,69 +164,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeTest.testDrawAfterAllTheSpacesAreFilled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TicTacToeTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TicTacToeTests" />
-      <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
-      <option name="METHOD_NAME" value="testDrawAfterAllTheSpacesAreFilled" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicTacToeTest.testThatIfThereIsWinnerAndBoardISFilled_DrawShouldBeFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TicTacToeTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TicTacToeTests" />
-      <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
-      <option name="METHOD_NAME" value="testThatIfThereIsWinnerAndBoardISFilled_DrawShouldBeFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicTacToeTest.testThatPlayerWinsGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TicTacToeTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TicTacToeTests" />
-      <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
-      <option name="METHOD_NAME" value="testThatPlayerWinsGame" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Diary Tests" />
-      <item itemvalue="JUnit.TicTacToeTest.testDrawAfterAllTheSpacesAreFilled" />
-      <item itemvalue="JUnit.TicTacToeTest.testThatIfThereIsWinnerAndBoardISFilled_DrawShouldBeFalse" />
+      <item itemvalue="JUnit.BackToSenderTest" />
+      <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" />
+      <item itemvalue="JUnit.BackToSenderTest.testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" />
       <item itemvalue="JUnit.TicTacToeTest" />
-      <item itemvalue="JUnit.TicTacToeTest.testThatPlayerWinsGame" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BackToSenderTest" />
+        <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" />
+        <item itemvalue="JUnit.BackToSenderTest.testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TicTacToeTest" />
-        <item itemvalue="JUnit.TicTacToeTest.testThatIfThereIsWinnerAndBoardISFilled_DrawShouldBeFalse" />
-        <item itemvalue="JUnit.TicTacToeTest.testDrawAfterAllTheSpacesAreFilled" />
-        <item itemvalue="JUnit.TicTacToeTest.testThatPlayerWinsGame" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +205,7 @@
       <workItem from="1709230384005" duration="33004000" />
       <workItem from="1709483872419" duration="2931000" />
       <workItem from="1709495051080" duration="12208000" />
-      <workItem from="1709549720035" duration="17132000" />
+      <workItem from="1709549720035" duration="26343000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -371,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709703533137</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixed bugs">
+      <option name="closed" value="true" />
+      <created>1709743360425</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1709743360426</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
