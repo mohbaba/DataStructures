@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="Fixed bugs">
-      <change afterPath="$PROJECT_DIR$/src/BackToSender/BackToSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/BackToSenderTest/BackToSenderTest.java" afterDir="false" />
+    <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="back to sender">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackToSender/BackToSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackToSender/BackToSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BackToSenderTest/BackToSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BackToSenderTest/BackToSenderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,20 +76,7 @@
       <recent name="Account" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BackToSenderTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TicTacToe.Main" />
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TicTacToe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="BackToSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArrayList" />
       <extension name="coverage">
@@ -102,6 +88,38 @@
       <option name="PACKAGE_NAME" value="BackToSenderTest" />
       <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsInvalidArgument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BackToSenderTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BackToSenderTest" />
+      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
+      <option name="METHOD_NAME" value="testThatFunctionReturnsZeroWhenNumberOfParcelsIsInvalidArgument" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsMoreThanRequiredAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BackToSenderTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BackToSenderTest" />
+      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
+      <option name="METHOD_NAME" value="testThatFunctionReturnsZeroWhenNumberOfParcelsIsMoreThanRequiredAmount" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,36 +167,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TicTacToeTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TicTacToeTests" />
-      <option name="MAIN_CLASS_NAME" value="TicTacToeTests.TicTacToeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Diary Tests" />
       <item itemvalue="JUnit.BackToSenderTest" />
+      <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsInvalidArgument" />
+      <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsMoreThanRequiredAmount" />
       <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" />
       <item itemvalue="JUnit.BackToSenderTest.testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" />
-      <item itemvalue="JUnit.TicTacToeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsMoreThanRequiredAmount" />
+        <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsInvalidArgument" />
         <item itemvalue="JUnit.BackToSenderTest" />
         <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" />
         <item itemvalue="JUnit.BackToSenderTest.testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TicTacToeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +208,7 @@
       <workItem from="1709230384005" duration="33004000" />
       <workItem from="1709483872419" duration="2931000" />
       <workItem from="1709495051080" duration="12208000" />
-      <workItem from="1709549720035" duration="26343000" />
+      <workItem from="1709549720035" duration="30557000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -383,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709743360426</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="back to sender">
+      <option name="closed" value="true" />
+      <created>1709786476029</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709786476030</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +418,8 @@
     <MESSAGE value="Added MainAppp" />
     <MESSAGE value="Added MainApp" />
     <MESSAGE value="Fixed bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs" />
+    <MESSAGE value="back to sender" />
+    <option name="LAST_COMMIT_MESSAGE" value="back to sender" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
