@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a59c0c8-6a16-4dd3-8d77-56e0e6dab05d" name="Changes" comment="back to sender logistics refactored">
+      <change afterPath="$PROJECT_DIR$/src/SevenSegmentDisplay/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Exceptions/AccessDeniedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Exceptions/EmployeePosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Exceptions/EmptyInventoryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Exceptions/EmptyStackDirectoryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Exceptions/SalaryPaidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/InventoryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Mediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/ProductCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Supermarket/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/SupermarketTests/AdminTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/SupermarketTests/InventoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BackToSender/BackToSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackToSender/BackToSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Diary/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Diary/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Diary/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Diary/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SevenSegmentDisplay/SevenSegmentDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SevenSegmentDisplay/SevenSegmentDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BackToSenderTest/BackToSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BackToSenderTest/BackToSenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SevenSegmentDisplayTests/SevenSegmentDisplayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SevenSegmentDisplayTests/SevenSegmentDisplayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,115 +65,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/DELL/IdeaProjects/ArrayList/test&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/Downloads/fullLine-241.11799/fullLine/lib/fullLine.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/DELL/IdeaProjects/ArrayList/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "C:/Users/DELL/IdeaProjects/ArrayList/test",
+    "last_opened_file_path": "C:/Users/DELL/IdeaProjects/ArrayList",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/DELL/IdeaProjects/ArrayList/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Supermarket.Exceptions" />
+      <recent name="Supermarket" />
       <recent name="Diary.Exceptions" />
       <recent name="Diary" />
       <recent name="FireDrill" />
-      <recent name="Account.Exceptions" />
-      <recent name="Account" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BackToSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SevenSegmentDisplayTest.testDisplayA">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SevenSegmentDisplay.Main" />
       <module name="ArrayList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BackToSenderTest.*" />
+          <option name="PATTERN" value="SevenSegmentDisplay.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="BackToSenderTest" />
-      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsInvalidArgument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BackToSenderTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BackToSenderTest" />
-      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
-      <option name="METHOD_NAME" value="testThatFunctionReturnsZeroWhenNumberOfParcelsIsInvalidArgument" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsMoreThanRequiredAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BackToSenderTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BackToSenderTest" />
-      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
-      <option name="METHOD_NAME" value="testThatFunctionReturnsZeroWhenNumberOfParcelsIsMoreThanRequiredAmount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BackToSenderTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BackToSenderTest" />
-      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
-      <option name="METHOD_NAME" value="testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BackToSenderTest.testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArrayList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BackToSenderTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BackToSenderTest" />
-      <option name="MAIN_CLASS_NAME" value="BackToSenderTest.BackToSenderTest" />
-      <option name="METHOD_NAME" value="testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,21 +123,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DiaryTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DiaryTests" />
+      <option name="MAIN_CLASS_NAME" value="DiaryTests.DiaryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SevenSegmentDisplayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SevenSegmentDisplayTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SevenSegmentDisplayTests" />
+      <option name="MAIN_CLASS_NAME" value="SevenSegmentDisplayTests.SevenSegmentDisplayTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SevenSegmentDisplayTest.testDisplayA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SevenSegmentDisplayTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SevenSegmentDisplayTests" />
+      <option name="MAIN_CLASS_NAME" value="SevenSegmentDisplayTests.SevenSegmentDisplayTest" />
+      <option name="METHOD_NAME" value="testDisplayA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SevenSegmentDisplayTest.testDisplaySevenSegment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArrayList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SevenSegmentDisplayTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SevenSegmentDisplayTests" />
+      <option name="MAIN_CLASS_NAME" value="SevenSegmentDisplayTests.SevenSegmentDisplayTest" />
+      <option name="METHOD_NAME" value="testDisplaySevenSegment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Diary Tests" />
-      <item itemvalue="JUnit.BackToSenderTest" />
-      <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsInvalidArgument" />
-      <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsMoreThanRequiredAmount" />
-      <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" />
-      <item itemvalue="JUnit.BackToSenderTest.testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" />
+      <item itemvalue="JUnit.SevenSegmentDisplayTest" />
+      <item itemvalue="JUnit.SevenSegmentDisplayTest.testDisplayA" />
+      <item itemvalue="JUnit.SevenSegmentDisplayTest.testDisplaySevenSegment" />
+      <item itemvalue="JUnit.DiaryTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsMoreThanRequiredAmount" />
-        <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsInvalidArgument" />
-        <item itemvalue="JUnit.BackToSenderTest" />
-        <item itemvalue="JUnit.BackToSenderTest.testThatFunctionReturnsZeroWhenNumberOfParcelsIsNegative" />
-        <item itemvalue="JUnit.BackToSenderTest.testThatRiderWillBePaidAfter80SuccessfullyDeliveredPackages" />
+        <item itemvalue="JUnit.SevenSegmentDisplayTest.testDisplayA" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SevenSegmentDisplayTest.testDisplaySevenSegment" />
+        <item itemvalue="JUnit.SevenSegmentDisplayTest" />
+        <item itemvalue="JUnit.DiaryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +226,16 @@
       <workItem from="1709230384005" duration="33004000" />
       <workItem from="1709483872419" duration="2931000" />
       <workItem from="1709495051080" duration="12208000" />
-      <workItem from="1709549720035" duration="30942000" />
+      <workItem from="1709549720035" duration="31846000" />
+      <workItem from="1709996014293" duration="287000" />
+      <workItem from="1709996323874" duration="18720000" />
+      <workItem from="1710063746082" duration="6340000" />
+      <workItem from="1710075405622" duration="1215000" />
+      <workItem from="1710078272713" duration="6817000" />
+      <workItem from="1710095647520" duration="4113000" />
+      <workItem from="1710137573601" duration="4318000" />
+      <workItem from="1710233155157" duration="181000" />
+      <workItem from="1710307870944" duration="5265000" />
     </task>
     <task id="LOCAL-00001" summary="Data Structures ArrayList and Stack added">
       <option name="closed" value="true" />
@@ -400,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709795276431</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="back to sender logistics refactored">
+      <option name="closed" value="true" />
+      <created>1709795395625</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1709795395625</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,6 +475,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ArrayList$JUnit_Tests.ic" NAME="JUnit Tests Coverage Results" MODIFIED="1708801538424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

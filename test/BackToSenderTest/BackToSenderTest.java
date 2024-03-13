@@ -4,7 +4,7 @@ import BackToSender.BackToSender;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+
 
 public class BackToSenderTest {
 
@@ -41,7 +41,6 @@ public class BackToSenderTest {
     @Test
     public void testThatFunctionThrowsExceptionWhenNumberOfParcelsIsMoreThanRequiredAmount(){
         int numberOfParcelsDelivered = 150;
-        assertThrows(IllegalArgumentException.class,
-                ()-> BackToSender.pay(numberOfParcelsDelivered));
+        assertEquals(55_000, BackToSender.pay(numberOfParcelsDelivered));
     }
 }

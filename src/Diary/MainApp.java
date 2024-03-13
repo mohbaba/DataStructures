@@ -6,8 +6,7 @@ import static java.lang.System.exit;
 
 public class MainApp {
     private static Diary diary ;
-    private static Diaries diaries = new Diaries();
-
+    private static final Diaries diaries = new Diaries();
     public static void main(String[] args) {
         mainMenu();
     }
@@ -21,11 +20,6 @@ public class MainApp {
         return scanner.nextLine();
     }
 
-//    public static void register(){
-//        username = setUsername();
-//        password = password();
-//        diaries.add(username,password);
-//    }
 
 
 
@@ -85,7 +79,8 @@ public class MainApp {
                 break;
 
             default:
-                print("Enter corect number");
+                print("Enter valid input");
+                mainMenu();
         }
 
 
@@ -138,6 +133,11 @@ public class MainApp {
             }
             diary.createEntry(title,body);
             print("*****Entry Successfully Added*****");
+            print("***************************");
+            print(title);
+            print(body);
+            print("***************************");
+
         }catch (Exception message){
             print(message.getMessage());
         }finally {
@@ -165,16 +165,22 @@ public class MainApp {
 
     public static void updateEntry() {
         if (diary == null)nullContingency();
-        String entryId = input("Enter the id of the entry you'd like to update: ");
-        String title = input("Enter new title: ");
-        String body = input("Enter body of the entry: ");
-        try {
 
+        try {
+            String entryId = input("Enter the id of the entry you'd like to update: ");
+            String title = input("Enter new title: ");
+            String body = input("Enter body of the entry: ");
             if (diary.isLocked()){
                 diary.unlockDiary(password());
             }
             diary.updateEntry(Integer.parseInt(entryId),title,body);
+            print("***************************");
             print("Entry successfully updated ");
+            print("***************************");
+            print(entryId);
+            print(title);
+            print(body);
+            print("***************************");
         }catch (Exception message){
             print(message.getMessage());
         }finally {
@@ -187,6 +193,7 @@ public class MainApp {
         try {
             diary = diaries.findByUsername(setUsername());
             print("Found the Diary! you may proceed to use now ");
+
         }catch (Exception message){
             print(message.getMessage());
         }finally {

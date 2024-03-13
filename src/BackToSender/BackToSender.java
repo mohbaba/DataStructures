@@ -18,8 +18,7 @@ public class BackToSender {
         }
     }
     public static int pay(int numberOfParcels) {
-        if (numberOfParcels > 100)throw new IllegalArgumentException("Amount of Parcels " +
-                "Exceeds The required amount");
+        if (numberOfParcels > 100)return (100 * getAmountPerParcel(calculatePercentage(100)) + 5000);
         if (numberOfParcels < 0)return 0;
         return (numberOfParcels * getAmountPerParcel(calculatePercentage(numberOfParcels))) + 5000;
     }

@@ -32,4 +32,19 @@ public class SevenSegmentDisplayTest {
         String input = "11111110";
          assertFalse(SevenSegmentDisplay.isOn(input));
     }
+
+    @Test
+    void testDisplaySevenSegment() {
+
+        String expected = """
+                    # # # #
+                    #     #
+                    # # # #
+                    #     #
+                    # # # #
+                    """;
+        assertEquals(expected, SevenSegmentDisplay.display("11111111"));
+
+    }
+
 }

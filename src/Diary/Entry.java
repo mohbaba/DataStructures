@@ -34,4 +34,8 @@ public class Entry {
     public String getBody(){
         return body;
     }
+
+    public String toString(){
+        return String.format("%d%n%s",id,body);
+    }
 }
