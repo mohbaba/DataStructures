@@ -18,7 +18,7 @@ public class SevenSegmentDisplayTest {
     @Test
     public void testTheInputCanOnlyBeZerosAndOnes(){
         String input = "1234567890";
-        assertThrows(IllegalArgumentException.class,()->SevenSegmentDisplay.checkInput(input));
+        assertThrows(IllegalArgumentException.class,()->SevenSegmentDisplay.validateBinaryInput(input));
     }
 
     @Test
